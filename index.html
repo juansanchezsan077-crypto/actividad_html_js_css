@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>DAVID SANCHEZ</h1>
+    </header>
+    <div id="contenedor">
+
+
+        <div class="espacio">
+            <div>
+                <h2>1 - Has hecho una compra y sabes el precio del producto y su iva. Haz un script que te calcule el precio total que vas a pagar por tu compra.</h2>
+                <br>
+            </div>
+            <label for="numero1">Valor Neto</label>
+            <input type="number" id="numero1" placeholder="Valor"><br><br>
+            <label for="numero2">Valor IVA</label>
+            <input type="number" id="numero2" placeholder="Valor"><br><br>
+            <button onclick="compras()">Sumar</button>
+            <br>
+            <input type=" text" id="resultado" placeholder="Resultado" readonly><br><br>
+            <div>
+                <h3 id="resultado_texto">El total de su compra es: </h3>
+            </div>
+        </div>
+
+
+        <div class="espacio">
+            
+            <h2>2 - En una variable tienes el lado de un cuadrado, debes escribir un programa que te calcule el área y el perímetro del cuadrado.</h2>
+            <br>
+            <label for="cuadrado_1">Ingrese un lado del cuadrado: </label>
+            <input type="number" id="cuadrado_1" placeholder="Ingrese numero"><br><br>
+            <button onclick="cuadrado()">Calcular</button>
+            <br>
+            <div>
+                <h3 id="resultado_Area">El total del área es: </h3>
+                <h3 id="resultado_Perimetro">El total del perimetro es: </h3>
+            </div>
+        </div>
+
+
+        <div class="espacio">
+
+            <h2>3 - En este script debes pedir al usuario un número de dos dígitos y debes devolver el número de unidades y de decenas, o sea, cada dígito del número. Usa solo operaciones aritméticas.
+</h2>
+            <br>
+            <label for="Operacion">Ingrese dos digitos</label>
+            <input type="number" id="Operacion" placeholder="Numeros"><br><br>
+            <button onclick="operaciones()">Ejecutar</button>
+            <br>
+            <div>
+                <h3 id="resultado_Decenas">Unidades </h3>
+                <h3 id="resultado_Unidades">Decenas </h3>
+            </div>
+        </div>
+
+
+        <div class="espacio">
+
+            <h2>4 - Una tortilla de patatas lleva 200 gramos de patatas por persona. Por cada kilo de patatas se necesitan 5 huevos y 300 gramos de cebolla. Escribe un script que dado el número de comensales calcule las cantidades de ingredientes necesarias.</h2>
+            <br>
+            <label for="Cantidad_C">Cantidad Comensales</label>
+            <input type="number" id="Cantidad_C" placeholder="Ingrese un numero"><br><br>
+            <button onclick="Tortilla()">Calcular</button>
+            <br>
+            <br>
+            <br>
+            <div>
+                <h3 id="Cantidad_papas">Cantidad de papas </h3>
+                <br>
+                <h3 id="Cantidad_huevos">Cantidad de huevos </h3>
+                <br>
+                <h3 id="Cantidad_cebolla">Cantidad de Cebolla </h3>
+            </div>
+        </div>
+
+        <div class="espacio">
+
+            <h2>5 - Juego de adivinar el numero entre 0 y 100, al final debe mostrar el numero de intentos y los números ingresados, el usuario tiene un máximo de 15 intentos los cuales se deben mostrar en cuenta regresiva; adicional dar pistas si el numero ingresado es mayor o menor al que se debe adivinar.</h2>
+            <br>
+            <label for="juego">digite un numero</label>
+            <input type="number" id="juego" placeholder="Numero de 0 a 100"><br><br>
+            <button onclick="juego()">Empezar</button>
+            
+            <p id="mensaje"></p> 
+            <p id="lista"></p> 
+        </div>
+
+
+
+        <div class="espacio">
+
+            <h2>6 - Serie Fibonacci donde el usuario decide el numero de secuencias a mostrar.</h2>
+            <br>
+            <label for="Limite">Ingrese un limite</label>
+            <input type="number" id="Limite" placeholder="Digite un número"><br><br>
+            <button onclick="Fibonacci()">Ejecutar</button>
+            <div>
+                <h3 id="Secuencia">Los numeros de acuerdo al límite son: </h3>
+            </div>
+        </div>
+
+
+    <div class="espacio">
+        <h2>7 - Realizar programa; Introducción de 2 números y el ordenador indica cual es
+el mayor o si son iguales.</h2>
+                <br>
+        
+        <label for="n11">primer numero</label>
+        <input type="number" id="n11" placeholder="numero 1"><br><br>
+
+        <label for="n22">segundo numero</label>
+        <input type="number" id="n22" placeholder="numero 2"><br><br>
+
+        <button onclick="comparar()">¿cual es mayor?</button>
+
+            <h3 id="resultado1">esperando numeros...</h3>
+    </div>
+        
+
+
+        <div class="espacio">
+
+            <h2>8- Realizar programa que calcule el factorial de un número entero no negativo ingresado por el usuario.</h2>
+            <br>
+
+            <p>Escribe un número entero:</p>
+
+            <input type="number" id="numero_usuario" placeholder="numero entero"><br><br>
+
+            <!-- Botón que activa mi función -->
+            <button onclick="sacarFactorial()">Calcular</button>
+
+            <!-- Párrafo donde voy a pintar el resultado -->
+            <h3 id="resultado_fac"></h3>
+        </div>
+
+
+
+        <div class="espacio">
+
+            <h2>9 - Escribe un programa que solicite al usuario dos números y luego muestre todos los números múltiplos de 6 que hay entre esos dos números, incluyendo los extremos.</h2>
+            <br>
+            <label for="n111">Primero</label>
+            <input type="number" id="n111" placeholder="numero 1"><br><br>
+
+            <label for="n222">Segundo</label>
+            <input type="number" id="n222" placeholder="numero 2"><br><br>
+
+            <button onclick="calcularMultiplos()">ver numeros multiplos</button>
+
+            <h3 id="resultado_multiplos">Los numeros multiplos de 6 son: </h3>
+
+        </div>
+
+
+        <div class="espacio">
+            <h2>10 - Crear un programa que genere un arreglo con 20 números entre 0 y 100, muestre este arreglo y luego cree 2 arreglos adiciones donde se separan pares de impares.</h2>
+            <br>
+
+            <button onclick="clasificarNumeros()">Crear arreglo</button>
+
+            <h3 id="resultado_todos">Areglo</h3>
+            <br>
+            <h3 id="resultado_pares">Pares</h3>
+            <br>
+            <h3 id="resultado_impares">Impares</h3>
+
+        </div>
+
+        <div class="espacio">
+            <h2>11 - Crear un programa que genere un arreglo con 10 números entre 10 y 20, lo muestre y luego elimine los múltiplos 3 mostrando como quedaría el arreglo modificado.</h2>
+            <br>
+
+            <button onclick="filtrarMultiplosTres()">Generar Arreglo</button>
+
+            <h3 id="antes_filtro">Original</h3>
+            <br>
+            <h3 id="despues_filtro">Despues</h3>
+        
+        </div>
+
+
+        <div class="espacio">
+            <h2>12 - dados los 3 lados de un triangulo estimar su área, y determinar si es equilátero, isósceles o escaleno.</h2>
+            <br>
+
+            <label for="lado_a">Primer numero de un Lado</label>
+            <input type="number" id="lado_a" placeholder="triangulo"><br><br>
+
+            <label for="lado_b">Segundo numero de un Lado</label>
+            <input type="number" id="lado_b" placeholder="triangulo"><br><br>
+
+            <label for="lado_c">Tercer Numero De un Lado</label>
+            <input type="number" id="lado_c" placeholder="triangulo"><br><br>
+
+            <button onclick="calcularTriangulo()">Ejecutar  </button>
+
+            <h3 id="tipo_triangulo"></h3>
+            <h3 id="area_triangulo"></h3>
+        
+        </div>
+
+
+        <div class="espacio">
+            <h2>13 - Crear un arreglo con n palabras, generar un nuevo arreglo con la cantidad de caracteres de cada palabra y por ultimo determinar de cuantos caracteres seria la oración con estas palabras.</h2>
+            <br>
+            
+            <label for="input_palabras">Escribe tu texto</label>
+            <input type="text" id="input_palabras" placeholder="Palabras"><br><br>
+
+            <button onclick="procesarPalabras()">Generar Arreglo Textual</button>
+
+            <h3 id="resultado_palabras">Primeras palabras</h3>
+            <h3 id="resultado_conteos">Cantidad de caracteres</h3>
+            <h3 id="resultado_total">Total de palabras</h3>
+
+        
+        </div>
+
+
+        <div class="espacio">
+            <h2>14 - Generar un arreglo con 10 números, generar 2 nuevos arreglos, con uno invertir su contenido de manera algorítmica y el otro con el uso de la función (reverse)</h2>
+            <br>
+
+            <button onclick="Arreglo_10()">Generar Arreglo</button>
+
+            <h3 id="original">Primer Arreglo</h3>
+            <h3 id="algoritmica">Manual</h3>
+            <h3 id="funcion_reverse">Reversa</h3>
+
+
+        </div>
+
+
+        <div class="espacio">
+            <h2>15 -  Realizar calculadora básica, donde el usuario decide la operación a realizar mediante input type radio</h2>
+        
+    <!-- Los cuadros para los números -->
+    <label>Número 1:</label>
+    <input type="number" id="num_uno" placeholder="Ej: 10"><br><br>
+
+    <label>Número 2:</label>
+    <input type="number" id="num_dos" placeholder="Ej: 5"><br><br>
+
+    <!--  Los botones "radio" (deben tener el mismo NAME para que solo se elija uno) -->
+    <fieldset>
+        <legend>Selecciona una operación:</legend>
+        
+        <input type="radio" name="operacion" value="sumar" checked> Sumar 
+        <br>
+        <input type="radio" name="operacion" value="restar"> Restar 
+        <br>
+        <input type="radio" name="operacion" value="multiplicar"> Multiplicar 
+        <br>
+        <input type="radio" name="operacion" value="dividir"> Dividir 
+        <br>
+    </fieldset>
+
+    <br>
+
+    <button onclick="calculadora()">Calcular ahora</button>
+
+    <hr>
+
+    <div>
+        <h3 id="resultado_calc">Esperando operación...</h3>
+    </div>
+
+        </div>
+
+
+    </div>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
